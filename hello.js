@@ -1,9 +1,9 @@
 $(document).ready(function() {
     $.ajax({
-        url: "https://pokeapi.co/api/v2/pokemon?limit=20&offset=0"
+        url: "https://pokeapi.co/api/v2/pokemon?limit=50&offset=0"
     }).then(function(data) {
 
-        let ini = "<table class='table table-striped' border='2'>";
+        let ini = "<table class='table table-striped' border='3'>";
         let tableHHead = '<thead class="table-light text-center"><tr><th>Nombre</th><th>Detalles</th><th>Imagen</th></tr></thead>'
         let content = "";        
         data.results.forEach(element => {
